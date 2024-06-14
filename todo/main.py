@@ -4,8 +4,8 @@ from typing import Annotated
 
 app = FastAPI()
 
-def common_parametrs(p:int | None = None, name:str="Nasir"):
-    return {"p":p, "name":name}
+def common_parametrs(rollNo:int | None = None, name:str="Nasir"):
+    return {"rollNo":rollNo, "name":name}
 
 @app.get("/")
 def rout():
